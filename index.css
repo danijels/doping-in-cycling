@@ -1,0 +1,52 @@
+body {
+  box-sizing: border-box;
+  font-family: Roboto, sans-serif;
+  font-weight: bold;
+}
+h1, h2 {
+  margin: 0;
+  text-align: center;
+  
+}
+
+text {
+  font-size: 0.8em;
+}
+
+.dot {
+  border: 1px solid black;
+  &:hover {
+    fill: white;
+  }
+}
+
+.tick {
+  font-size: 0.8rem
+}
+
+#container {
+  height: 550px;
+  margin: 0 auto;
+  padding: 30px;
+  position: relative;
+  width: 950px;
+}
+
+#left-text {
+  left: -20px;
+  position: absolute;
+  top: 250px;
+  transform: rotate(-90deg);
+}
+
+#tooltip {
+  border-radius: 3px;
+  box-shadow: 1px 1px 3px;
+  font-size: 0.7em;
+  line-height: 1em;
+  padding: 5px 10px;
+  /*The following stops the box from blocking the circles it covers after the mouseout event: */
+  pointer-events: none;
+  position: absolute;
+  opacity: 0;  
+}
